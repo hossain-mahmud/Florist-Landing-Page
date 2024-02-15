@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ============ commn css part start  ============= */
 * {
@@ -8,20 +9,31 @@
     outline: 0;
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
-   margin: 0;
-   padding: 0;
-   outline: 0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
-a{
-text-decoration: none !important;
-display: inline-block;
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
 }
+
 /* ============ commn css part start  ============= */
 /* ============ CSS Variables part start  ============= */
 :root {
     --poppins: "Poppins", sans-serif;
     --lato: "Lato", sans-serif;
+    --brand_color: #285A43;
+    --secondary_color: #121212;
+    --raleway: "Raleway", sans-serif;
 }
 
 /* ============ CSS Variables part start  ============= */
@@ -34,14 +46,16 @@ display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero_title h2{
+
+.hero_title h2 {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
     font-family: var(--lato);
     color: #fff;
 }
-.hero_title p{
+
+.hero_title p {
     padding: 0px 300px;
     font-size: 18px;
     line-height: 28px;
@@ -51,12 +65,14 @@ display: inline-block;
     text-align: center;
     margin-bottom: 37px;
 }
-.hero_buttons{
-display: flex;
-justify-content: center;
-gap: 20px;
+
+.hero_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-.hero_buttons .book_now a{
+
+.hero_buttons .book_now a {
     padding: 12px 50px;
     background: #285A43;
     border-radius: 3px;
@@ -66,11 +82,13 @@ gap: 20px;
     color: #fff;
     transition: all linear .3s;
 }
-.hero_buttons .book_now a:hover{
+
+.hero_buttons .book_now a:hover {
     border: 2px solid #fff;
     background: none;
 }
-.hero_buttons .watch_video a{
+
+.hero_buttons .watch_video a {
     padding: 12px 50px;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -80,22 +98,89 @@ gap: 20px;
     color: #fff;
     transition: all linear .3s;
 }
-.hero_buttons .watch_video a:hover{
+
+.hero_buttons .watch_video a:hover {
     border: 2px solid #285A43;
     background: #285A43;
 }
+
 /* -------------- hero css part start  ------------ */
 /* ============ choose_section css part start  ============= */
-#choose_section{
+#choose_section {
     padding: 120px 0;
 }
-.choose_texts{
+
+.choose_texts {
     display: flex;
     justify-content: center;
     gap: 75px;
+    margin-bottom: 90px;
 }
 
+.choose_texts_left h2 {
+    width: 450px;
+    font-size: 36px;
+    line-height: 46px;
+    font-family: var(--lato);
+    font-weight: 700;
+    color: var(--brand_color);
+}
 
+.choose_texts_right p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--raleway);
+    font-weight: 500;
+}
+
+.choose_cards {
+    display: flex;
+    gap: 80px;
+}
+
+.choose_cards .choose_card {
+    padding: 20px 30px;
+    border-radius: 10px;
+    transition: all linear .5s;
+    border: .5px solid #999;
+}
+
+.choose_card img {
+    width: 61px;
+}
+
+.choose_card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--lato);
+    font-weight: 800;
+    color: var(--brand_color);
+}
+
+.choose_card p {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: var(--raleway);
+    font-weight: 500;
+    color: var(--secondary_color);
+}
+
+.choose_card:hover {
+    background: var(--brand_color);
+}
+
+.choose_card:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.choose_card:hover h3 {
+    color: #fff;
+}
+
+.choose_card:hover p {
+    color: #fff;
+}
 
 /* -------------- choose_section css part start  ------------ */
 /* ============ choose_section css part start  ============= */
