@@ -49,6 +49,7 @@ display: inline-block;
     font-family: var(--poppins);
     color: #F8F8F8;
     text-align: center;
+    margin-bottom: 37px;
 }
 .hero_buttons{
 display: flex;
@@ -68,6 +69,41 @@ gap: 20px;
 .hero_buttons .book_now a:hover{
     border: 2px solid #fff;
     background: none;
-
 }
-/* ----------------- hero css part start  ----------------- */
+.hero_buttons .watch_video a{
+    padding: 12px 50px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--lato);
+    color: #fff;
+    transition: all linear .3s;
+}
+.hero_buttons .watch_video a:hover{
+    border: 2px solid #285A43;
+    background: #285A43;
+}
+/* -------------- hero css part start  ------------ */
+/* ============ choose_section css part start  ============= */
+#choose_section{
+    padding: 120px 0;
+}
+.choose_texts{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+
+
+/* -------------- choose_section css part start  ------------ */
+/* ============ choose_section css part start  ============= */
+
+/* -------------- choose_section css part start  ------------ */
+/* ============ choose_section css part start  ============= */
+
+/* -------------- choose_section css part start  ------------ */
+/* ============ choose_section css part start  ============= */
+
+/* -------------- choose_section css part start  ------------ */
